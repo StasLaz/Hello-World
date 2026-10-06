@@ -1,5 +1,5 @@
-function varargout=shadedErrorBar(x,y,errBar,lineProps,transparent,addition,bandAlpha)
-% function H=shadedErrorBar(x,y,errBar,lineProps,transparent,addition,bandAlpha)
+function varargout=shadedErrorBarColor(x,y,errBar,lineProps,transparent,addition,bandAlpha)
+% function H=shadedErrorBarColor(x,y,errBar,lineProps,transparent,addition,bandAlpha)
 %
 % Purpose
 % Makes a 2-d line plot with a pretty shaded error bar made
@@ -38,10 +38,10 @@ function varargout=shadedErrorBar(x,y,errBar,lineProps,transparent,addition,band
 % Examples
 % myColor = [217/255, 83/255, 25/255];
 % y=randn(30,80); x=1:size(y,2);
-% shadedErrorBar(x,mean(y,1),std(y));                      % myColor, 20% band
-% shadedErrorBar(x,mean(y,1),std(y),myColor);              % same, explicit
-% shadedErrorBar(x,y,{@mean,@std},{'-','Color',myColor});  % via lineProps
-% shadedErrorBar(x,y,{@median,@std},{'r-o','markerfacecolor','r'});
+% shadedErrorBarColor(x,mean(y,1),std(y));                      % myColor, 20% band
+% shadedErrorBarColor(x,mean(y,1),std(y),myColor);              % same, explicit
+% shadedErrorBarColor(x,y,{@mean,@std},{'-','Color',myColor});  % via lineProps
+% shadedErrorBarColor(x,y,{@median,@std},{'r-o','markerfacecolor','r'});
 %
 % Rob Campbell - November 2009
 
